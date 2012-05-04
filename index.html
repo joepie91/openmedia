@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<title>The Open Media Project</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+		<script type="text/javascript" src="data.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			/* <![CDATA[ */
+				(function() {
+					var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+					t.parentNode.insertBefore(s, t);
+				})();
+			/* ]]> */
+		</script>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div class="nowplaying">
+				<h2>Now Playing</h2>
+				<h3 id="np_title">Select a video to start watching...</h3>
+				<p id="np_description"></p>
+			</div>
+			<h3 class="category_header">Categories</h3>
+			<div id="categorylist">
+				
+			</div>
+			<div class="category_footer">
+				(don't worry, selecting a category won't stop the video that is currently playing!)
+			</div>
+			
+			<a class="category_item" style="margin-top: 22px; color: yellow;" href="submit.php" target="_blank">Submit movies/series/etc.</a>
+			<a class="category_item" style="color: yellow;" href="http://www.cryto.net/donate" target="_blank">Donate (via CrytoCC)</a>
+			<a class="category_item" href="http://wiki.cryto.net/doku.php?id=projects:openmedia" target="_blank">Developers</a>
+			<div style="text-align: center; margin-top: 22px;">
+				<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.cryto.net/openmedia"></a>
+				<noscript><a href="http://flattr.com/thing/626064/The-Open-Media-Project" target="_blank">
+				<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+			</div>
+		</div>
+		<div id="main">
+			<div id="index" class="index_expanded">
+				<div style="padding: 16px;">
+					<h5>What is the Open Media Project?</h5>
+					<p>The Open Media Project is a - for now - small project to promote the distribution of freely licensed video materials. Usually
+					this will be videos under Creative Commons or similar licenses. All videos on this site can be distributed freely in their original form
+					for non-profit purposes, and some videos may also allow you to distribute them commercially (do some research to figure this out).</p>
+					<h5>How do I start?</h5>
+					<p>Pick a category, and select a movie, documentary, talk or episode!</p>
+					<h5>How do I help?</h5>
+					<p>You can help by either <a href="submit.php" target="_blank">submitting</a> videos, or by <a href="http://www.cryto.net/donate" target="_blank">
+					donating through the Cryto Coding Collective</a>.</p>
+				</div>
+			</div>
+			<div id="video" class="video_shrunk">
+				<div class="introtext"><strong>Hi there!</strong> Select a video to start watching.</div>
+			</div>
+		</div>
+	</body>
+</html>

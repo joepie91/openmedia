@@ -1,0 +1,197 @@
+html, body
+{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	font-family: sans-serif;
+	background-color: black;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 0px;
+}
+
+#sidebar
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 360px;
+	background-color: #171717;
+	color: white;
+	overflow: auto;
+}
+
+#sidebar .nowplaying
+{
+	padding: 9px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid silver;
+	margin-bottom: 21px;
+	margin-top: 13px;
+}
+
+#np_description
+{
+	text-align: justify;
+}
+
+#main
+{
+	position: absolute;
+	left: 360px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+.video_normal
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+.video_shrunk
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 200px;
+}
+
+.index_normal
+{
+	display: none;
+}
+
+.index_expanded
+{
+	position: absolute;
+	top: 200px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+#video
+{
+	text-align: center;
+	overflow: hidden;
+}
+
+#index
+{
+	background-color: #0C0C0C;
+	overflow: auto;
+}
+
+.introtext
+{
+	font-size: 38px;
+	padding-top: 60px;
+	color: silver;
+}
+
+.category_item
+{
+	display: block;
+	background-color: #212121;
+	padding: 6px 9px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.category_item:hover
+{
+	background-color: #2B2B2B;
+}
+
+h4
+{
+	font-size: 36px;
+	margin: 9px 8px;
+}
+
+.video_item
+{
+	display: block;
+	text-decoration: none;
+	color: silver;
+	border: 1px solid silver;
+	margin: 12px;
+	padding: 9px;
+	float: left;
+	width: 400px;
+	height: 250px;
+}
+
+.video_item:hover
+{
+	border: 1px solid white;
+	color: white !important;
+	background-color: #000000;
+}
+
+.video_title
+{
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.video_description
+{
+	font-size: 15px;
+	margin-top: 6px;
+}
+
+.category_header
+{
+	margin-left: 8px;
+	margin-bottom: 3px;
+}
+
+.category_footer
+{
+	font-size: 13px;
+	margin: 9px;
+}
+
+.close_button
+{
+	display: block;
+	float: right;
+	margin: 24px;
+	border: 1px solid silver;
+	color: silver;
+	text-decoration: none;
+	padding: 7px 13px;
+	font-weight: bold;
+}
+
+.close_button:hover
+{
+	border: 1px solid white;
+	color: white;
+	background-color: black;
+}
+
+#index h5
+{
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+#index a
+{
+	color: silver;
+}
